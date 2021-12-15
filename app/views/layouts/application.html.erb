@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Taski</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all' %>
+    <%= javascript_pack_tag 'application' %>
+  </head>
+
+  <body>
+
+  <%= image_tag("logos/logo.jpg", width: "100px")%>
+  <%= render "shared/nav"%>
+  <%= render "shared/alerts"%>
+    <%= yield %>
+  </body>
+</html>
